@@ -1,13 +1,13 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Turbo Notes is a basic single page note taking app built in Ruby on Rails featuring turbo frames and turbo streams to ensure a streamlined and smooth user experience.
 
 * Ruby version
+3.1.2p20
 
 * System dependencies
+  for testing:
+  gem 'rspec-rails', '~> 6.1.0'
+  gem 'simplecov', require: false
 
 * Configuration
 
@@ -16,9 +16,4 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  rspec spec
