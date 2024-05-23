@@ -9,5 +9,5 @@ Turbo Notes is a basic single page note taking app built in Ruby on Rails featur
   gem 'rspec-rails', '~> 6.1.0'
   gem 'simplecov'
 
-* How to run the test suite
+* How to run the test suite:
   rspec spec
