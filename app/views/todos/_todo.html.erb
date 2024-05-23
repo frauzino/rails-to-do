@@ -1,0 +1,12 @@
+<div id="todo_<%=todo.id%>" class="card mb-2">
+  <%= link_to edit_todo_path(todo), method: :get, data: { turbo_frame: "new_todo" } do %>
+    <div class="card-body card-content-wrapper">
+      <div id="title_<%= todo.id %>" class="title">
+        <%= todo.title %>
+      </div>
+    </div>
+  <% end %>
+  <%= button_to todo, method: :delete, class: 'delete' do %>
+    <i class="fa-solid fa-trash-can" style="color: #0d6efd"></i>
+  <% end %>
+</div>

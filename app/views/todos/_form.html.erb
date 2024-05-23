@@ -1,0 +1,13 @@
+<%= form_with(model: todo, id: "todo_form", class: "form") do |form| %>
+  <div class="row">
+    <div class="col-9">
+      <%= content_tag :h4, form.label(:title, action, style: 'display: block; text-transform: capitalize') %>
+    </div>
+    <div class="col-3">
+      <%= form.text_field :title, placeholder: 'title', class: 'form-control' %>
+    </div>
+  </div>
+  <%= form.text_area :content, class: 'form-control text-area' %>
+
+  <%= form.submit "Save", class: 'btn btn-primary', style: "width: fit-content" %>
+<% end %>

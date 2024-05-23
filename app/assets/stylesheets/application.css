@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+  background-color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-wrap: nowrap;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #333333;
+}
+
+.notes-container, .edit-note-container {
+  background-color: #f0f0f0;
+  min-width: fit-content;
+  border-radius: 5px;
+  padding: 1rem;
+  height: 100%;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.notes-wrapper {
+  overflow: auto;
+}
+
+.notes-wrapper > h3 {
+  margin-bottom: 1.25rem;
+}
+
+.card-content-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.card-content-wrapper:active {
+  box-shadow: inset 0px 0 3px #d2d2d2;
+  border-radius: 5px;
+}
+
+.title {
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.text-area {
+  height: 100%;
+  resize: none;
+}
+
+.field_with_errors {
+  height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.delete {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .25rem;
+  margin: .75rem;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background: #acacac78;
+  border-radius: 5px;
+}
+
+.delete:active {
+  transform: scale(0.9);
+}
+
+.close {
+  padding: .25rem;
+  border-radius: 5px;
+  transition: .2s;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.close:hover {
+  cursor: pointer;
+  background: #acacac78;
+}
+
+.close:active {
+  transform: scale(0.9);
+}
+
+#flashes {
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.flash {
+  padding: 1rem;
+  border: #dddddd 1px solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #d2d2d2;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: .2s;
+}
+
+.flash-neutral {
+  background: lightblue;
+  color: darkblue;
+
+ }
+
+.flash-success {
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.flash-error {
+  background: lightcoral;
+  color: darkred;
+}
+
+.flash-warning {
+  background: lightgoldenrodyellow;
+  color: darkgoldenrod;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
